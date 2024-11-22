@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python API Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Python API Demo</h1>
+
+        <!-- Registration Form -->
+        <div id="register-form">
+            <h2>Register</h2>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="text" id="name" placeholder="Name" required>
+            <button onclick="register()">Register</button>
+        </div>
+
+        <!-- Login Form -->
+        <div id="login-form">
+            <h2>Login</h2>
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button onclick="login()">Login</button>
+        </div>
+
+        <!-- Post Creation Form -->
+        <div id="post-form" style="display: none;">
+            <h2>Create Post</h2>
+            <textarea id="caption" placeholder="Post caption" required></textarea>
+            <input type="text" id="image-url" placeholder="Image URL" required>
+            <button onclick="createPost()">Create Post</button>
+        </div>
+
+        <!-- Comment Form -->
+        <div id="comment-form" style="display: none;">
+            <h2>Add Comment</h2>
+            <textarea id="comment-text" placeholder="Comment text" required></textarea>
+            <button onclick="addComment()">Add Comment</button>
+        </div>
+
+        <div id="posts-list" style="margin-top: 20px;">
+            <h2>Posts</h2>
+            <div id="posts"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
